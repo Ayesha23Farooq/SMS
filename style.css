@@ -1,0 +1,130 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background: black;
+    color: #b588df;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* navbar */
+.logo-over-navbar {
+      position: relative;
+      top: 25px;
+      left: 55px;
+      transform: translate(-50%, -50%);
+      height: 80px;
+      z-index: 6;
+    }
+  .navbar{
+      position: fixed;
+        z-index: 5;
+    }
+/* Navbar text default white */
+.navbar .nav-link {
+  color: white !important;
+}
+
+/* Hover pe halka highlight */
+.navbar .nav-link:hover {
+  color: #c4a3e5 !important;
+}
+
+/* ScrollSpy active link color purple */
+.navbar .nav-link.active {
+  color: purple !important;
+  font-weight: 600;
+}
+
+/* Section scroll hone pe center mein aaye */
+section {
+  scroll-margin-top: 100px; /* navbar height ke barabar rakhna */
+}
+
+/* hero section */
+.hero-section{
+    background-image: url('images/building1.jpeg');
+    background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-overlay{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39 26 48 / 67%);
+  z-index: 1;
+}
+.hero-content{
+    color: white;
+    z-index: 2;
+}
+.hero-content h1 {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#submit-btn{
+    background-image: linear-gradient(to right, rgb(36, 31, 51), rgb(50, 0, 137)) !important ;
+    border: none !important;
+}
+
+/* admisson section */
+.carousel-control-prev {
+    left: -30px;
+}
+.carousel-control-next {
+    right: -29px;
+}
+.glass-effect,.ad-mod {
+  color: rgb(202 156 220);
+  background: rgb(138 41 176 / 13%);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* faculty */
+.card img{
+  height: 250px;
+  object-fit: cover;
+}
+/* vision section */
+.vision-bg {
+      background: rgb(90 53 107 / 30%) ;
+    color: #d8afff;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+/* Subject section */
+.custom-table, th ,td{
+  background: rgb(55 25 69 / 30%) !important; 
+  color: #d8afff !important;    
+   border-radius: 15px;      
+}
+
+.img-fluid{
+  height: 211px;
+}
+.card {
+      transition: all 0.3s ease; /* smooth animation */
+    }
+.card:hover {
+      transform: translateY(-10px); /* card upar uth jaye */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* thoda shadow deepen ho jaye */
+    }

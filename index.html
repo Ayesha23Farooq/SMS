@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS CSS -->
+  <link
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>School Management System</title>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#"
+    data-bs-offset="80"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-sm navbar-dark fixed-top"
+      style="background: rgba(0, 0, 0, 0.5);"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-white"
+          href="#hero"
+          style="font-family: Quintessential"
+          >Nevermore</a
+        >
+        <button
+          id="submit-btn"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#admission-section">Admission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faculty">Faculty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subjects">Subjects</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" />
+            <button id="submit-btn" class="btn btn-primary" type="button">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class=" mb-5 hero-section container-fluid">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img class="img-fluid" src="images/logo.jpg" alt="">
+        <p class="lead py-5"> A Legacy of Excellence in Education —<br> Where Curiosity Meets Creativity.</p>
+      </div>
+    </section>
+
+    <div class="container my-5 text-center">
+      <!-- Admission Section -->
+      <section id="admission-section" class="sections mb-5"  >
+        <div class="row align-items-center">
+          <h1 data-aos="fade-up" data-aos-delay="200">Admission Section</h1>
+          <div class="col-sm-6 my-5 justify-content-center">
+            <p class="mb-5" data-aos="fade-up" data-aos-delay="200">
+              Over the years, Nevermore School has nurtured and graduated
+              countless bright minds. Many of our former students have gone on
+              to achieve remarkable success in their careers and personal lives.
+              Today, they shine as professionals, innovators, and leaders — a
+              true reflection of the foundation built here at Nevermore.
+            </p>
+            <button
+              id="submit-btn"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#admission-modal"
+            >
+              Apply
+            </button>
+          </div>
+          <div class="col-sm-6 my-5 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <!-- Carousel -->
+            <div
+              id="demo"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              style="max-width: 200px; width: 100%"
+            >
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/allum1.jpg"
+                    alt="Los Angeles"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption-below-mt-2">
+                    <strong>Wednesday Adams</strong>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/allum2.jpg"
+                    alt="Chicago"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption-below-mt-2">
+                    <strong>Enid Sinclair</strong>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/allum3.jpg"
+                    alt="New York"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption-below-mt-2">
+                    <strong>Bianca Barclay</strong>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/allum4.jpg"
+                    alt="New York"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption-below-mt-2">
+                    <strong>Eugene Ottinger</strong>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/allum5.jpg"
+                    alt="New York"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption-below-mt-2">
+                    <strong>Agnes DeMile</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <div class="container-fluid mt-3">
+                <h3>Our Alumnies</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- admission modal -->
+        <div class="ad-mod modal fade" id="admission-modal" tabindex="-1">
+          <div class="modal-dialog text-black">
+            <img
+              class="logo-over-navbar rounded-circle"
+              src="images/logo.jpg"
+              alt=""
+            />
+            <div
+              id="formAlert"
+              class="alert alert-success d-none mt-3 text-black"
+            >
+              ✅ Thank you! Your application has been submitted.
+            </div>
+            <form class="glass-effect modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-center">Admission Form</h5>
+                <button
+                  type="button"
+                  class="btn-close text-start d-block"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label class="form-label text-start d-block">Full Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text-start d-block"
+                    >Email address
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text-start d-block">Contact</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="number"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-start d-block">Address</label>
+                  <input type="tel" class="form-control" id="phone" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-start d-block"
+                    >Date of Birth</label
+                  >
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-start d-block"
+                    >Select Department</label
+                  >
+                  <select class="form-select" id="doctor">
+                    <option selected disabled>Grade Level</option>
+                    <option>Grade A</option>
+                    <option>Grade B</option>
+                    <option>Grade C</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  id="submit-btn"
+                  type="submit"
+                  onclick="document.getElementById('formAlert').classList.remove('d-none')"
+                  class="btn btn-success"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faculty Section -->
+      <section id="faculty" class="sections mb-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
+          <h2 class="text-center">Our Faculty</h2>
+          <div class="row">
+            <!-- Teacher 1 -->
+            <div class="col-md-4 my-5">
+              <div class="card shadow text-center">
+                <img
+                  src="images/Principal.jpg"
+                  class="card-img-top"
+                  alt="Teacher Name"
+                />
+
+                <div class="card-body" style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
+                  <h5 class="card-title">Larissa Weems</h5>
+                  <p class="card-text">
+                    <strong>Subjects:</strong> Mathematics, Physics
+                  </p>
+                  <p class="card-text">
+                    "I believe in teaching with curiosity and creativity."
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Teacher 2 -->
+            <div class="col-md-4 my-5">
+              <div class="card shadow text-center">
+                <img
+                  src="images/teacher4.jpg"
+                  class="card-img-top"
+                  alt="Teacher Name"
+                />
+                <div class="card-body" style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
+                  <h5 class="card-title">Barry Dort</h5>
+                  <p class="card-text">
+                    <strong>Subjects:</strong> English Literature
+                  </p>
+                  <p class="card-text">
+                    "Language is the foundation of human connection."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Teacher 3 -->
+            <div class="col-md-4 my-5">
+              <div class="card shadow text-center">
+                <img
+                  src="images/teacher3.jpg"
+                  class="card-img-top"
+                  alt="Teacher Name"
+                />
+                <div class="card-body"  style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
+                  <h5 class="card-title">Retcons Marilyn</h5>
+                  <p class="card-text">
+                    <strong>Subjects:</strong> English Literature
+                  </p>
+                  <p class="card-text">
+                    "Language is the foundation of human connection."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more teachers -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision Section -->
+
+      <section id="vision" class="sections mb-5" data-aos="fade-up" data-aos-delay="400">
+        <div class="container">
+          <h2 class="my-5">Our Vision</h2>
+          <div class="card vision-bg shadow-lg border-0">
+            <div class="card-body text-center">
+              <p class="lead">
+                At Nevermore Academy, we strive to nurture young minds into
+                brilliant leaders and creative thinkers. Our mission is to
+                empower students with knowledge, integrity, and a passion for
+                lifelong learning. We envision a future where every student
+                leaves with confidence, courage, and purpose to shape the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subjects Offered Section -->
+      <section id="subjects" class="sections mb-5" data-aos="fade-up" data-aos-delay="600">
+        <h2 class="my-5">Subjects We Offer</h2>
+        <table id="section-thems" class="table table-borderless custom-table">
+    <thead>
+      <tr>
+        <th>Subjects</th>
+        <th>Professors</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maths</td>
+        <td>Larissa Weems</td>
+        <td>LarissaWeems@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>English Literature</td>
+        <td>Barry Dort</td>
+        <td>BarryDort@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>Computer</td>
+        <td>Retcons Marilyn</td>
+        <td>RetconsMarilyn@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>Algotihms & Data Structure</td>
+        <td>Retcons Marilyn</td>
+        <td>RetconsMarilyn@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>Data analyst</td>
+        <td>Retcons Marilyn</td>
+        <td>RetconsMarilyn@nevermore.edu</td>
+      </tr>
+    </tbody>
+  </table>
+
+      </section>
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,  // animation duration
+      once: true      // ek baar hi chale (scroll back pe repeat na ho)
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 mt-5">
+  <div class="container text-center">
+    <h3 class="mb-4">📞 Contact Us</h3>
+    
+    <p class="mb-2 fs-5">
+      <strong>Email:</strong> info@nevermore.edu
+    </p>
+    
+    <p class="mb-2 fs-5">
+      <strong>Phone:</strong> +40 300 1234567
+    </p>
+    
+    <p class="mb-2 fs-5">
+      <strong>Address:</strong> Nevermore Academy, Cantacuzino Castle in Busteni, Romania
+    </p>
+
+    <div class="mt-4">
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <hr class="my-4" style="border-color: rgba(53, 7, 65, 0.386);">
+    
+    <p class="mb-0">&copy; 2025 Nevermore Academy. All rights reserved.</p>
+  </div>
+</footer>
+  </body>
+</html>
