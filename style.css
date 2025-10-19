@@ -52,7 +52,6 @@ html {
 section {
   scroll-margin-top: 100px; 
    min-height: 50vh;
-  padding: 20px 0; 
 }
 
 /* hero section */
@@ -162,7 +161,7 @@ td {
 /* mission */
 .mission-row {
   position: relative;
-  padding: 80px 0 40px;
+  padding: 110px 0px 208px;
 }
 
 /* Horizontal base line */
@@ -185,7 +184,7 @@ td {
   height: 52px;
   background: linear-gradient(to right, rgb(0 0 0), rgb(124 81 133));
   z-index: 0;
-  top: 20%; /* exactly on horizontal line */
+  top: 20%;
   border-radius: 2px;
   transform: translateY(-50%);
 }
@@ -228,6 +227,7 @@ td {
   top: calc(20% + 52px);
   transform: translateX(-50%);
 }
+
 
 .mission-box.box-2 {
   left: 50%;
