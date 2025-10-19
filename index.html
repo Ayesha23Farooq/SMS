@@ -39,14 +39,14 @@
   </head>
   <body
     data-bs-spy="scroll"
-    data-bs-target="#"
+    data-bs-target="#mynavbar"
     data-bs-offset="80"
     tabindex="0"
   >
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-sm navbar-dark fixed-top"
-      style="background: rgba(0, 0, 0, 0.5);"
+      style="background:rgb(77 23 101 / 33%);"
     >
       <div class="container-fluid">
         <a
@@ -66,15 +66,25 @@
         </button>
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#admission-section">Admission</a>
-            </li>
+
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admission</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#admission-section">Admission</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="modal"
+              data-bs-target="#admission-modal" href="#admission-modal">Direct Apply</a></li>
+            <li><a class="dropdown-item" href="#vision">Vision</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
+        </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#faculty">Faculty</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#subjects">Subjects</a>
             </li>
+
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="text" placeholder="Search" />
@@ -95,7 +105,7 @@
       </div>
     </section>
 
-    <div class="container my-5 text-center">
+    <div class="container text-center">
       <!-- Admission Section -->
       <section id="admission-section" class="sections mb-5"  >
         <div class="row align-items-center">
@@ -113,6 +123,7 @@
               class="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#admission-modal"
+              data-aos="fade-up" data-aos-delay="200"
             >
               Apply
             </button>
@@ -208,9 +219,170 @@
           </div>
         </div>
 
-        <!-- admission modal -->
+        <!-- admission modal last-->
+
+      </section>
+
+      <!-- Faculty Section -->
+      <section id="faculty" class="sections my-5" data-aos="fade-up" data-aos-delay="400">
+        <div class="container">
+          <h2 class="text-center">Our Faculty</h2>
+          <div class="row">
+            <!-- Teacher 1 -->
+            <div class="col-md-4 my-5">
+              <div class="card shadow text-center" >
+                <img
+                  src="images/Principal.jpg"
+                  class="card-img-top"
+                  alt="Teacher Name"
+                />
+
+                <div class="card-body" style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
+                  <h5 class="card-title">Larissa Weems</h5>
+                  <p class="card-text">
+                    <strong>Subjects:</strong> Mathematics, Physics
+                  </p>
+                  <p class="card-text">
+                    "I believe in teaching with curiosity and creativity."
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Teacher 2 -->
+            <div class="col-md-4 my-5">
+              <div class="card shadow text-center">
+                <img
+                  src="images/teacher4.jpg"
+                  class="card-img-top"
+                  alt="Teacher Name"
+                />
+                <div class="card-body" style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
+                  <h5 class="card-title">Barry Dort</h5>
+                  <p class="card-text">
+                    <strong>Subjects:</strong> English Literature
+                  </p>
+                  <p class="card-text">
+                    "Language is the foundation of human connection."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Teacher 3 -->
+            <div class="col-md-4 my-5">
+              <div class="card shadow text-center">
+                <img
+                  src="images/teacher3.jpg"
+                  class="card-img-top"
+                  alt="Teacher Name"
+                />
+                <div class="card-body"  style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
+                  <h5 class="card-title">Retcons Marilyn</h5>
+                  <p class="card-text">
+                    <strong>Subjects:</strong> English Literature
+                  </p>
+                  <p class="card-text">
+                    "Language is the foundation of human connection."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more teachers -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision Section -->
+
+      <section id="vision" class="sections text-center my-5" data-aos="fade-up" data-aos-delay="600">
+  <div class="container">
+    <div class="row mb-4 justify-content-center position-relative">
+      <h2 class="mb-4">Our Vision</h2>
+      <p class="mb-5">We aim to build a bright educational future through these missions:</p>
+      <p class="vision-bg lead mb-5 py-5">
+        At Nevermore Academy, we strive to nurture young minds into brilliant leaders and creative thinkers.
+        Our mission is to empower students with knowledge, integrity, and a passion for lifelong learning.
+        We envision a future where every student leaves with confidence, courage, and purpose to shape the world.
+      </p>
+    </div>
+
+    <div class="row mb-5 justify-content-center position-relative mission-row">
+      <!-- Horizontal main line -->
+      <div class="mission-line-horizontal d-none d-md-block"></div>
+
+      <!-- 3 vertical lines -->
+      <div class="mission-line-vertical first d-none d-md-block"></div>
+      <div class="mission-line-vertical second d-none d-md-block"></div>
+      <div class="mission-line-vertical third d-none d-md-block"></div>
+
+      <!-- Mission boxes -->
+      <div class="col-md-3 col-sm-12 col-10 mission">
+        <div class="mission-box box-1">To inspire creativity and independent thinking in every student.</div>
+      </div>
+      <div class="col-md-3 col-sm-12 col-10 mission">
+        <div class="mission-box box-2">To cultivate leadership, empathy, and a sense of responsibility.</div>
+      </div>
+      <div class="col-md-3 col-sm-12 col-10 mission">
+        <div class="mission-box box-3">To provide an inclusive environment that encourages lifelong learning.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Subjects Offered Section -->
+      <section id="subjects" class="sections my-5 " data-aos="fade-up" data-aos-delay="800">
+        <h2 class="my-5">Subjects We Offer</h2>
+
+        <div class="container subj-wrapper table-responsive">
+          <table id="section-thems" class="table table-borderless custom-table ">
+    <thead>
+      <tr>
+        <th>Subjects</th>
+        <th>Professors</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maths</td>
+        <td>Larissa Weems</td>
+        <td>LarissaWeems@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>English Literature</td>
+        <td>Barry Dort</td>
+        <td>BarryDort@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>Computer</td>
+        <td>Retcons Marilyn</td>
+        <td>RetconsMarilyn@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>Algotihms & Data Structure</td>
+        <td>Retcons Marilyn</td>
+        <td>RetconsMarilyn@nevermore.edu</td>
+      </tr>
+      <tr>
+        <td>Data analyst</td>
+        <td>Retcons Marilyn</td>
+        <td>RetconsMarilyn@nevermore.edu</td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        
+
+      </section>
+      <!-- outside section code -->
+         <!-- admission modal -->
         <div class="ad-mod modal fade" id="admission-modal" tabindex="-1">
-          <div class="modal-dialog text-black">
+          <div class="modal-dialog">
             <img
               class="logo-over-navbar rounded-circle"
               src="images/logo.jpg"
@@ -227,7 +399,7 @@
                 <h5 class="modal-title text-center">Admission Form</h5>
                 <button
                   type="button"
-                  class="btn-close text-start d-block"
+                  class="btn-close btn-close-white text-start d-block "
                   data-bs-dismiss="modal"
                 ></button>
               </div>
@@ -294,139 +466,8 @@
             </form>
           </div>
         </div>
-      </section>
 
-      <!-- Faculty Section -->
-      <section id="faculty" class="sections mb-5" data-aos="fade-up" data-aos-delay="200">
-        <div class="container">
-          <h2 class="text-center">Our Faculty</h2>
-          <div class="row">
-            <!-- Teacher 1 -->
-            <div class="col-md-4 my-5">
-              <div class="card shadow text-center">
-                <img
-                  src="images/Principal.jpg"
-                  class="card-img-top"
-                  alt="Teacher Name"
-                />
-
-                <div class="card-body" style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
-                  <h5 class="card-title">Larissa Weems</h5>
-                  <p class="card-text">
-                    <strong>Subjects:</strong> Mathematics, Physics
-                  </p>
-                  <p class="card-text">
-                    "I believe in teaching with curiosity and creativity."
-                  </p>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Teacher 2 -->
-            <div class="col-md-4 my-5">
-              <div class="card shadow text-center">
-                <img
-                  src="images/teacher4.jpg"
-                  class="card-img-top"
-                  alt="Teacher Name"
-                />
-                <div class="card-body" style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
-                  <h5 class="card-title">Barry Dort</h5>
-                  <p class="card-text">
-                    <strong>Subjects:</strong> English Literature
-                  </p>
-                  <p class="card-text">
-                    "Language is the foundation of human connection."
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Teacher 3 -->
-            <div class="col-md-4 my-5">
-              <div class="card shadow text-center">
-                <img
-                  src="images/teacher3.jpg"
-                  class="card-img-top"
-                  alt="Teacher Name"
-                />
-                <div class="card-body"  style="background: rgb(90 53 107 / 30%); color: rgb(66, 23, 89);">
-                  <h5 class="card-title">Retcons Marilyn</h5>
-                  <p class="card-text">
-                    <strong>Subjects:</strong> English Literature
-                  </p>
-                  <p class="card-text">
-                    "Language is the foundation of human connection."
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Add more teachers -->
-          </div>
-        </div>
-      </section>
-
-      <!-- Vision Section -->
-
-      <section id="vision" class="sections mb-5" data-aos="fade-up" data-aos-delay="400">
-        <div class="container">
-          <h2 class="my-5">Our Vision</h2>
-          <div class="card vision-bg shadow-lg border-0">
-            <div class="card-body text-center">
-              <p class="lead">
-                At Nevermore Academy, we strive to nurture young minds into
-                brilliant leaders and creative thinkers. Our mission is to
-                empower students with knowledge, integrity, and a passion for
-                lifelong learning. We envision a future where every student
-                leaves with confidence, courage, and purpose to shape the world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Subjects Offered Section -->
-      <section id="subjects" class="sections mb-5" data-aos="fade-up" data-aos-delay="600">
-        <h2 class="my-5">Subjects We Offer</h2>
-        <table id="section-thems" class="table table-borderless custom-table">
-    <thead>
-      <tr>
-        <th>Subjects</th>
-        <th>Professors</th>
-        <th>Department</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Maths</td>
-        <td>Larissa Weems</td>
-        <td>LarissaWeems@nevermore.edu</td>
-      </tr>
-      <tr>
-        <td>English Literature</td>
-        <td>Barry Dort</td>
-        <td>BarryDort@nevermore.edu</td>
-      </tr>
-      <tr>
-        <td>Computer</td>
-        <td>Retcons Marilyn</td>
-        <td>RetconsMarilyn@nevermore.edu</td>
-      </tr>
-      <tr>
-        <td>Algotihms & Data Structure</td>
-        <td>Retcons Marilyn</td>
-        <td>RetconsMarilyn@nevermore.edu</td>
-      </tr>
-      <tr>
-        <td>Data analyst</td>
-        <td>Retcons Marilyn</td>
-        <td>RetconsMarilyn@nevermore.edu</td>
-      </tr>
-    </tbody>
-  </table>
-
-      </section>
+        <!-- scriptes include -->
       <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -435,8 +476,9 @@
     });
   </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Footer -->
-    <footer class="py-5 mt-5">
+    <footer class="py-5 mb-2" id="contact">
   <div class="container text-center">
     <h3 class="mb-4">📞 Contact Us</h3>
     

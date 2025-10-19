@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-body{
-    background: black;
-    color: #b588df;
+body {
+  background: black;
+  color: #b588df;
 }
 * {
   box-sizing: border-box;
@@ -15,42 +16,49 @@ html {
 }
 /* navbar */
 .logo-over-navbar {
-      position: relative;
-      top: 25px;
-      left: 55px;
-      transform: translate(-50%, -50%);
-      height: 80px;
-      z-index: 6;
-    }
-  .navbar{
-      position: fixed;
-        z-index: 5;
-    }
+  position: relative;
+  top: 25px;
+  left: 55px;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  z-index: 6;
+}
+.navbar {
+  position: fixed;
+  z-index: 5;
+   box-shadow: 0 8px 25px rgba(213, 134, 243, 0.456) !important;
+  backdrop-filter: blur(6px);
+}
 /* Navbar text default white */
 .navbar .nav-link {
   color: white !important;
 }
-
-/* Hover pe halka highlight */
+/* btn */
+.btn-close{
+  color: white !important;
+}
+/* Hover */
 .navbar .nav-link:hover {
   color: #c4a3e5 !important;
 }
 
-/* ScrollSpy active link color purple */
+/* ScrollSpy */
 .navbar .nav-link.active {
   color: purple !important;
   font-weight: 600;
 }
 
-/* Section scroll hone pe center mein aaye */
+/* Section scroll*/
 section {
-  scroll-margin-top: 100px; /* navbar height ke barabar rakhna */
+  scroll-margin-top: 100px; 
+   min-height: 50vh;
+  padding: 20px 0; 
 }
 
 /* hero section */
-.hero-section{
-    background-image: url('images/building1.jpeg');
-    background-size: cover;
+.hero-section {
+  background-image: url("images/building1.jpeg");
+  background-size: cover;
   background-position: relative;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -61,8 +69,8 @@ section {
   text-align: center;
   overflow: hidden;
 }
-.hero-overlay{
- position: absolute;
+.hero-overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -70,9 +78,9 @@ section {
   background-color: rgba(39 26 48 / 67%);
   z-index: 1;
 }
-.hero-content{
-    color: white;
-    z-index: 2;
+.hero-content {
+  color: white;
+  z-index: 2;
 }
 .hero-content h1 {
   font-family: "Quintessential", serif;
@@ -80,51 +88,169 @@ section {
   font-style: normal;
 }
 
-#submit-btn{
-    background-image: linear-gradient(to right, rgb(36, 31, 51), rgb(50, 0, 137)) !important ;
-    border: none !important;
+#submit-btn {
+  background-image: linear-gradient(
+    to right,
+    rgb(36, 31, 51),
+    rgb(50, 0, 137)
+  ) !important ;
+  border: none !important;
 }
 
 /* admisson section */
 .carousel-control-prev {
-    left: -30px;
+  left: -30px;
 }
 .carousel-control-next {
-    right: -29px;
+  right: -29px;
 }
-.glass-effect,.ad-mod {
+.glass-effect,
+.ad-mod {
   color: rgb(202 156 220);
   background: rgb(138 41 176 / 13%);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+.dropdown-menu {
+  background: rgb(138 41 176 / 13%);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dropdown-menu .dropdown-item{
+  color: rgb(195, 184, 200) !important;
+  backdrop-filter: blur(10px);
+}
+.dropdown-menu .dropdown-item:hover {
+  color: rgb(255, 208, 251) !important;
+  background-color: rgba(138, 41, 176, 0.2);
+  border-radius: 8px; 
+}
 /* faculty */
-.card img{
+.card img {
   height: 250px;
   object-fit: cover;
 }
 /* vision section */
 .vision-bg {
-      background: rgb(90 53 107 / 30%) ;
-    color: #d8afff;
-   border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
+  background: rgb(90 53 107 / 30%);
+  color: #d8afff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
 }
 /* Subject section */
-.custom-table, th ,td{
-  background: rgb(55 25 69 / 30%) !important; 
-  color: #d8afff !important;    
-   border-radius: 15px;      
+.custom-table,
+th,
+td {
+  background: rgb(55 25 69 / 30%) !important;
+  color: #d8afff !important;
+  border-radius: 15px;
 }
 
-.img-fluid{
+.img-fluid {
   height: 211px;
 }
 .card {
-      transition: all 0.3s ease; /* smooth animation */
-    }
+  transition: all 0.3s ease;
+}
 .card:hover {
-      transform: translateY(-10px); /* card upar uth jaye */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* thoda shadow deepen ho jaye */
-    }
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* mission */
+.mission-row {
+  position: relative;
+  padding: 80px 0 40px;
+}
+
+/* Horizontal base line */
+.mission-line-horizontal {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(to bottom, rgb(0 0 0), rgb(124 81 133));
+  z-index: 0;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+/* Common vertical line style */
+.mission-line-vertical {
+  position: absolute;
+  width: 3px;
+  height: 52px;
+  background: linear-gradient(to right, rgb(0 0 0), rgb(124 81 133));
+  z-index: 0;
+  top: 20%; /* exactly on horizontal line */
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+/* Position 1 — start of horizontal line */
+.mission-line-vertical.first {
+  left: 26%;
+  transform: translate(-50%, -50%);
+}
+
+/* Position 2 — center of horizontal line */
+.mission-line-vertical.second {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Position 3 — end of horizontal line */
+.mission-line-vertical.third {
+  right: 26%;
+  transform: translate(50%, -50%);
+}
+
+/* Mission box styling */
+.mission-box {
+  background: rgba(138, 41, 176, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #c3b8c8;
+  padding: 25px;
+  position: absolute;
+  z-index: 1;
+  width: 180px;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+/* Attach each box to its vertical line (center head aligned) */
+.mission-box.box-1 {
+  left: 26%;
+  top: calc(20% + 52px);
+  transform: translateX(-50%);
+}
+
+.mission-box.box-2 {
+  left: 50%;
+  top: calc(20% + 52px);
+  transform: translateX(-50%);
+}
+
+.mission-box.box-3 {
+  right: 26%;
+  top: calc(20% + 52px);
+  transform: translateX(50%);
+}
+/* Hide lines on small screens for clean mobile view */
+@media (max-width: 768px) {
+  .mission-line-horizontal,
+  .mission-line-vertical {
+    display: none;
+  }
+
+  .mission-box {
+    position: static !important;
+    transform: none !important;
+    width: 90%;
+    margin: 15px auto;
+  }
+}
